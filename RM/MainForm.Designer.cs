@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.MenuBar = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TopBar = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnMinimizeBox = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.CenterPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSetting = new Guna.UI2.WinForms.Guna2Button();
             this.btnKitchen = new Guna.UI2.WinForms.Guna2Button();
             this.btnPOS = new Guna.UI2.WinForms.Guna2Button();
@@ -42,11 +37,16 @@
             this.btnProduct = new Guna.UI2.WinForms.Guna2Button();
             this.btnCategories = new Guna.UI2.WinForms.Guna2Button();
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.TopBar = new Guna.UI2.WinForms.Guna2Panel();
             this.lblLoginName = new System.Windows.Forms.Label();
+            this.btnMinimizeBox = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.btnExit = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.CenterPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.MenuBar.SuspendLayout();
-            this.TopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.TopBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuBar
@@ -67,61 +67,6 @@
             this.MenuBar.Name = "MenuBar";
             this.MenuBar.Size = new System.Drawing.Size(262, 1296);
             this.MenuBar.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 91);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 88);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Restaurant Management System";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TopBar
-            // 
-            this.TopBar.Controls.Add(this.lblLoginName);
-            this.TopBar.Controls.Add(this.btnMinimizeBox);
-            this.TopBar.Controls.Add(this.btnExit);
-            this.TopBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TopBar.FillColor = System.Drawing.Color.Gainsboro;
-            this.TopBar.Location = new System.Drawing.Point(262, 0);
-            this.TopBar.Name = "TopBar";
-            this.TopBar.Size = new System.Drawing.Size(2042, 85);
-            this.TopBar.TabIndex = 0;
-            // 
-            // btnMinimizeBox
-            // 
-            this.btnMinimizeBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizeBox.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.btnMinimizeBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.btnMinimizeBox.IconColor = System.Drawing.Color.White;
-            this.btnMinimizeBox.Location = new System.Drawing.Point(1920, 22);
-            this.btnMinimizeBox.Name = "btnMinimizeBox";
-            this.btnMinimizeBox.Size = new System.Drawing.Size(45, 29);
-            this.btnMinimizeBox.TabIndex = 1;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.CustomClick = true;
-            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.btnExit.IconColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(1976, 22);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(45, 29);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // CenterPanel
-            // 
-            this.CenterPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CenterPanel.Location = new System.Drawing.Point(262, 85);
-            this.CenterPanel.Name = "CenterPanel";
-            this.CenterPanel.Size = new System.Drawing.Size(2042, 1211);
-            this.CenterPanel.TabIndex = 0;
             // 
             // btnSetting
             // 
@@ -343,6 +288,18 @@
             this.btnHome.TextOffset = new System.Drawing.Point(20, 0);
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 91);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(251, 88);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Restaurant Management System";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -356,6 +313,18 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
+            // TopBar
+            // 
+            this.TopBar.Controls.Add(this.lblLoginName);
+            this.TopBar.Controls.Add(this.btnMinimizeBox);
+            this.TopBar.Controls.Add(this.btnExit);
+            this.TopBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TopBar.FillColor = System.Drawing.Color.Gainsboro;
+            this.TopBar.Location = new System.Drawing.Point(262, 0);
+            this.TopBar.Name = "TopBar";
+            this.TopBar.Size = new System.Drawing.Size(2042, 85);
+            this.TopBar.TabIndex = 0;
+            // 
             // lblLoginName
             // 
             this.lblLoginName.AutoSize = true;
@@ -363,9 +332,40 @@
             this.lblLoginName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoginName.Location = new System.Drawing.Point(26, 31);
             this.lblLoginName.Name = "lblLoginName";
-            this.lblLoginName.Size = new System.Drawing.Size(232, 34);
+            this.lblLoginName.Size = new System.Drawing.Size(193, 28);
             this.lblLoginName.TabIndex = 0;
             this.lblLoginName.Text = "label userlogin name";
+            // 
+            // btnMinimizeBox
+            // 
+            this.btnMinimizeBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizeBox.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.btnMinimizeBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.btnMinimizeBox.IconColor = System.Drawing.Color.White;
+            this.btnMinimizeBox.Location = new System.Drawing.Point(1920, 22);
+            this.btnMinimizeBox.Name = "btnMinimizeBox";
+            this.btnMinimizeBox.Size = new System.Drawing.Size(45, 29);
+            this.btnMinimizeBox.TabIndex = 1;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.CustomClick = true;
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.btnExit.IconColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(1976, 22);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(45, 29);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // CenterPanel
+            // 
+            this.CenterPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CenterPanel.Location = new System.Drawing.Point(262, 85);
+            this.CenterPanel.Name = "CenterPanel";
+            this.CenterPanel.Size = new System.Drawing.Size(2042, 1211);
+            this.CenterPanel.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -378,13 +378,14 @@
             this.Controls.Add(this.MenuBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.MenuBar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.TopBar.ResumeLayout(false);
             this.TopBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

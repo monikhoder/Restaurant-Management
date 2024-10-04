@@ -26,5 +26,10 @@ namespace RM
         {
 
         }
+
+        public virtual void pictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

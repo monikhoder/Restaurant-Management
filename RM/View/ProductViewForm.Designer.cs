@@ -1,6 +1,6 @@
 ﻿namespace RM.View
 {
-    partial class CategoryViewForm
+    partial class ProductViewForm
     {
         /// <summary>
         /// Required designer variable.
@@ -76,9 +76,9 @@
             this.lblHeader.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeader.Location = new System.Drawing.Point(25, 9);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(197, 38);
+            this.lblHeader.Size = new System.Drawing.Size(194, 46);
             this.lblHeader.TabIndex = 1;
-            this.lblHeader.Text = "Categories List";
+            this.lblHeader.Text = "Product List";
             // 
             // txtSearch
             // 
@@ -188,13 +188,12 @@
             this.dgvCategoriesList.ThemeStyle.RowsStyle.Height = 28;
             this.dgvCategoriesList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvCategoriesList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvCategoriesList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoriesList_CellClick);
             // 
             // dgvId
             // 
             this.dgvId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.dgvId.FillWeight = 85F;
-            this.dgvId.HeaderText = "Category ID";
+            this.dgvId.HeaderText = "Product ID";
             this.dgvId.MinimumWidth = 85;
             this.dgvId.Name = "dgvId";
             this.dgvId.ReadOnly = true;
@@ -245,14 +244,14 @@
             this.dgvDelete.ReadOnly = true;
             this.dgvDelete.Width = 50;
             // 
-            // CategoryViewForm
+            // ProductViewForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1031, 606);
             this.Controls.Add(this.dgvCategoriesList);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CategoryViewForm";
+            this.Name = "ProductViewForm";
             this.Text = "CategoryViewForm";
             this.Load += new System.EventHandler(this.CategoryViewForm_Load);
             this.guna2Panel1.ResumeLayout(false);
@@ -269,12 +268,12 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvCategoriesList;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvId;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvCreated;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvUpdated;
         private System.Windows.Forms.DataGridViewImageColumn dgvEdit;
         private System.Windows.Forms.DataGridViewImageColumn dgvDelete;
-        public Guna.UI2.WinForms.Guna2DataGridView dgvCategoriesList;
     }
 }

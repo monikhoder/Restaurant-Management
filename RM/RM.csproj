@@ -65,6 +65,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.cs">
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="DataModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -99,28 +102,34 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\CategoriesAddForm.cs">
+    <Compile Include="Model\CategoryUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Model\CategoriesAddForm.Designer.cs">
-      <DependentUpon>CategoriesAddForm.cs</DependentUpon>
+    <Compile Include="Model\CategoryUpdate.Designer.cs">
+      <DependentUpon>CategoryUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\ProductAdd.Designer.cs">
+      <DependentUpon>ProductAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SampleAdd.cs">
+    <Compile Include="Model\CategoryAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SampleAdd.Designer.cs">
-      <DependentUpon>SampleAdd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SampleView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SampleView.Designer.cs">
-      <DependentUpon>SampleView.cs</DependentUpon>
+    <Compile Include="Model\CategoryAdd.Designer.cs">
+      <DependentUpon>CategoryAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="user.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductViewForm.Designer.cs">
+      <DependentUpon>ProductViewForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\CategoryViewForm.cs">
       <SubType>Form</SubType>
@@ -137,8 +146,11 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\CategoriesAddForm.resx">
-      <DependentUpon>CategoriesAddForm.cs</DependentUpon>
+    <EmbeddedResource Include="Model\CategoryUpdate.resx">
+      <DependentUpon>CategoryUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ProductAdd.resx">
+      <DependentUpon>ProductAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -150,11 +162,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SampleAdd.resx">
-      <DependentUpon>SampleAdd.cs</DependentUpon>
+    <EmbeddedResource Include="Model\CategoryAdd.resx">
+      <DependentUpon>CategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SampleView.resx">
-      <DependentUpon>SampleView.cs</DependentUpon>
+    <EmbeddedResource Include="View\ProductViewForm.resx">
+      <DependentUpon>ProductViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\CategoryViewForm.resx">
       <DependentUpon>CategoryViewForm.cs</DependentUpon>

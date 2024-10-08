@@ -39,5 +39,15 @@ namespace RM
         {
             AddControls(new HomeForm());
         }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+           AddControls(new View.CategoryViewForm());
+        }
+
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            AddControls(new View.ProductViewForm());
+        }
     }
 }

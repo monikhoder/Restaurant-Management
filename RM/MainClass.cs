@@ -8,11 +8,12 @@ namespace RM
 {
     public class MainClass
     {
+        public static RMEntities db = new RMEntities();
         
         //get validation user
         public static bool Isvaliuser(string username, string password)
         {
-            var db = new RMEntities();
+           // var db = new RMEntities();
             foreach (var item in db.users)
             {
                 if (item.username == username && item.upass == password)
@@ -34,6 +35,9 @@ namespace RM
             set { user = value; }
 
         }
+
+        //Get category list
+        
 
 
     }

@@ -26,5 +26,6 @@ namespace RM
         }
     
         public virtual DbSet<user> users { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
     }
 }

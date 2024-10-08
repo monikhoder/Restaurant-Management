@@ -230,6 +230,7 @@
             this.btnProduct.Text = "Products";
             this.btnProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnProduct.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // btnCategories
             // 
@@ -258,6 +259,7 @@
             this.btnCategories.Text = "Categories";
             this.btnCategories.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCategories.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnCategories.Click += new System.EventHandler(this.btnCategories_Click);
             // 
             // btnHome
             // 
@@ -378,7 +380,6 @@
             this.Controls.Add(this.MenuBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);

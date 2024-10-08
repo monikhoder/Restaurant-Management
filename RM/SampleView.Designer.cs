@@ -38,7 +38,7 @@
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(674, 59);
+            this.lblSearch.Location = new System.Drawing.Point(1134, 59);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(64, 25);
             this.lblSearch.TabIndex = 0;
@@ -57,7 +57,7 @@
             this.txbSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbSearch.IconLeft = global::RM.Properties.Resources.search;
             this.txbSearch.IconLeftOffset = new System.Drawing.Point(10, 0);
-            this.txbSearch.Location = new System.Drawing.Point(678, 89);
+            this.txbSearch.Location = new System.Drawing.Point(1138, 89);
             this.txbSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txbSearch.Name = "txbSearch";
             this.txbSearch.PasswordChar = '\0';
@@ -99,14 +99,14 @@
             // 
             this.guna2Separator1.Location = new System.Drawing.Point(30, 148);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(1022, 26);
+            this.guna2Separator1.Size = new System.Drawing.Size(1481, 26);
             this.guna2Separator1.TabIndex = 3;
             // 
             // SampleVies
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1071, 673);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.guna2Separator1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txbSearch);

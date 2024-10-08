@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace RM.Model
 {
-    public partial class CategoriesAddForm : SampleAdd
+    public partial class CategoriesAddForm: SampleAdd
     {
         public CategoriesAddForm()
         {
             InitializeComponent();
         }
-
-        private void CategoriesAddForm_Load(object sender, EventArgs e)
+        public int CategoryID = 0;
+        public override void btnClose_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void lblHeader_Click(object sender, EventArgs e)
+        public override void btnSave_Click(object sender, EventArgs e)
         {
 
         }

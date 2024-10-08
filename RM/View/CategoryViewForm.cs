@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace RM.View
 {
-    public partial class CategoryViewForm : Form
+    public partial class CategoryViewForm : SampleVies
     {
         public CategoryViewForm()
         {
             InitializeComponent();
+        }
+        public override void txbSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public override void btnAdd_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

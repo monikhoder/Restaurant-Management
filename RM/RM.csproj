@@ -156,6 +156,9 @@
     <EmbeddedResource Include="SampleView.resx">
       <DependentUpon>SampleView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\CategoryViewForm.resx">
+      <DependentUpon>CategoryViewForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="DataModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DataModel.Designer.cs</LastGenOutput>

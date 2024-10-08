@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RM
+namespace RM.View
 {
-    public partial class SampleVies : Form
+    public partial class CategoryViewForm : Form
     {
-        public SampleVies()
+        public CategoryViewForm()
         {
             InitializeComponent();
-        }
-
-        public virtual void txbSearch_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        public virtual void btnAdd_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

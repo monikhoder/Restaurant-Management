@@ -8,21 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RM
+namespace RM.Model
 {
-    public partial class SampleVies : Form
+    public partial class CategoriesAddForm : SampleAdd
     {
-        public SampleVies()
+        public CategoriesAddForm()
         {
             InitializeComponent();
         }
 
-        public virtual void txbSearch_TextChanged(object sender, EventArgs e)
+        private void CategoriesAddForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        public virtual void btnAdd_Click(object sender, EventArgs e)
+        private void lblHeader_Click(object sender, EventArgs e)
         {
 
         }

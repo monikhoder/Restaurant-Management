@@ -55,5 +55,10 @@ namespace RM
         {
             AddControls(new View.TableViewForm());
         }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            AddControls(new View.StaffViewForm());
+        }
     }
 }

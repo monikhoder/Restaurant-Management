@@ -35,7 +35,18 @@ namespace RM
 
         }
 
-        //Get category list
+        //Get validation username
+        public static bool Isvaliusername(string username)
+        {
+            foreach (var item in db.users)
+            {
+                if (item.username == username)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
         
 
 

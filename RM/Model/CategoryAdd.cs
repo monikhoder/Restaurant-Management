@@ -60,7 +60,7 @@ namespace RM
                 alert.Text = "Please enter Category name";
                 alert .Parent = this;
                 alert.Show();
-                //MessageBox.Show("Please enter category name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
             }
         }
     }

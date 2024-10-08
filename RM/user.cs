@@ -22,5 +22,6 @@ namespace RM
         public System.DateTime created { get; set; }
         public System.DateTime updated { get; set; }
         public string uRole { get; set; }
+        public Nullable<byte> Status { get; set; }
     }
 }

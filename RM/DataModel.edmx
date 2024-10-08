@@ -31,8 +31,9 @@
           <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="upass" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="uName" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="uRole" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="uRole" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="uPhone" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Status" Type="tinyint" />
           <Property Name="created" Type="datetime" Nullable="false" />
           <Property Name="updated" Type="datetime" Nullable="false" />
         </EntityType>
@@ -56,7 +57,8 @@
           <Property Name="uPhone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="created" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="updated" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="uRole" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="uRole" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="Byte" />
         </EntityType>
         <EntityContainer Name="RMEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="users" EntityType="Self.user" />
@@ -90,6 +92,7 @@
           <EntitySetMapping Name="users">
             <EntityTypeMapping TypeName="RMModel.user">
               <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="uRole" ColumnName="uRole" />
                 <ScalarProperty Name="userID" ColumnName="userID" />
                 <ScalarProperty Name="username" ColumnName="username" />

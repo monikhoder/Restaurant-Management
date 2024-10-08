@@ -102,6 +102,12 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\StaffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\StaffAdd.Designer.cs">
+      <DependentUpon>StaffAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\TableAdd .cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,12 @@
     <Compile Include="user.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="View\StaffViewForm .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\StaffViewForm .Designer.cs">
+      <DependentUpon>StaffViewForm .cs</DependentUpon>
+    </Compile>
     <Compile Include="View\TableViewForm .cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +161,9 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Model\StaffAdd.resx">
+      <DependentUpon>StaffAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Model\TableAdd .resx">
       <DependentUpon>TableAdd .cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +182,9 @@
     </Compile>
     <EmbeddedResource Include="Model\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StaffViewForm .resx">
+      <DependentUpon>StaffViewForm .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TableViewForm .resx">
       <DependentUpon>TableViewForm .cs</DependentUpon>

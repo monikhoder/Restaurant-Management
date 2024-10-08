@@ -61,8 +61,8 @@ namespace RM.View
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
-            CategoryAdd sampleAdd = new CategoryAdd();
-            sampleAdd.ShowDialog();
+            CategoryAdd add = new CategoryAdd();
+            add.ShowDialog();
             loadCategories();
         }
 
@@ -81,29 +81,20 @@ namespace RM.View
             }
             else if (dgvCategoriesList.CurrentCell.OwningColumn.Name == "dgvDelete")
             {
-                var category = MainClass.db.Categories.FirstOrDefault(c => c.CategoryId == Id);
-                if (category != null)
+                Guna2MessageDialog confirm = new Guna2MessageDialog();
+                confirm.Icon = MessageDialogIcon.Question;
+                confirm.Buttons = MessageDialogButtons.YesNo;
+                confirm.Style = MessageDialogStyle.Light;
+                confirm.Parent = Form.ActiveForm;
+                confirm.Text = $"Are you sure you want to delete {Name} from category?";
+                if (confirm.Show() == DialogResult.Yes)
                 {
-                    // Show a confirmation dialog
-                    var confirmResult = MessageBox.Show(
-                        $"Are you sure you want to delete {Name} from category?",
-                        "Confirm Delete",
-                        MessageBoxButtons.YesNo,
-                        MessageBoxIcon.Warning);
-
-                    // If the user clicks "Yes", proceed with the delete
-                    if (confirmResult == DialogResult.Yes)
-                    {
-                        // Remove the entity
-                        MainClass.db.Categories.Remove(category);
-
-                        // Save changes to commit the deletion
-                        MainClass.db.SaveChanges();
-
-                       // MessageBox.Show("Category deleted successfully.");
-                        loadCategories();
-                    }
+                    var category = MainClass.db.Categories.FirstOrDefault(c => c.CategoryId == Id);
+                    MainClass.db.Categories.Remove(category);
+                    MainClass.db.SaveChanges();
+                    loadCategories();
                 }
+
             }
         }
     }

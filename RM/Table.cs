@@ -12,15 +12,11 @@ namespace RM
     using System;
     using System.Collections.Generic;
     
-    public partial class user
+    public partial class Table
     {
-        public int userID { get; set; }
-        public string username { get; set; }
-        public string upass { get; set; }
-        public string uName { get; set; }
-        public string uPhone { get; set; }
-        public System.DateTime created { get; set; }
-        public System.DateTime updated { get; set; }
-        public string uRole { get; set; }
+        public int TableId { get; set; }
+        public string TableName { get; set; }
+        public System.DateTime Created { get; set; }
+        public System.DateTime Updated { get; set; }
     }
 }

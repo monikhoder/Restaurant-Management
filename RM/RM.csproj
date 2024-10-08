@@ -102,11 +102,11 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\CategoryUpdate.cs">
+    <Compile Include="Model\TableAdd .cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Model\CategoryUpdate.Designer.cs">
-      <DependentUpon>CategoryUpdate.cs</DependentUpon>
+    <Compile Include="Model\TableAdd .Designer.cs">
+      <DependentUpon>TableAdd .cs</DependentUpon>
     </Compile>
     <Compile Include="Model\ProductAdd.cs">
       <SubType>Form</SubType>
@@ -122,14 +122,17 @@
     <Compile Include="Model\CategoryAdd.Designer.cs">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Table.cs">
+      <DependentUpon>DataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="user.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="View\ProductViewForm.cs">
+    <Compile Include="View\TableViewForm .cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\ProductViewForm.Designer.cs">
-      <DependentUpon>ProductViewForm.cs</DependentUpon>
+    <Compile Include="View\TableViewForm .Designer.cs">
+      <DependentUpon>TableViewForm .cs</DependentUpon>
     </Compile>
     <Compile Include="View\CategoryViewForm.cs">
       <SubType>Form</SubType>
@@ -146,8 +149,8 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\CategoryUpdate.resx">
-      <DependentUpon>CategoryUpdate.cs</DependentUpon>
+    <EmbeddedResource Include="Model\TableAdd .resx">
+      <DependentUpon>TableAdd .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model\ProductAdd.resx">
       <DependentUpon>ProductAdd.cs</DependentUpon>
@@ -165,8 +168,8 @@
     <EmbeddedResource Include="Model\CategoryAdd.resx">
       <DependentUpon>CategoryAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\ProductViewForm.resx">
-      <DependentUpon>ProductViewForm.cs</DependentUpon>
+    <EmbeddedResource Include="View\TableViewForm .resx">
+      <DependentUpon>TableViewForm .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\CategoryViewForm.resx">
       <DependentUpon>CategoryViewForm.cs</DependentUpon>
@@ -203,6 +206,7 @@
       <DependentUpon>DataModel.edmx</DependentUpon>
       <LastGenOutput>DataModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\restaurant.png" />
     <None Include="Resources\delete.png" />
     <None Include="Resources\edit.png" />
     <None Include="Resources\search.png" />

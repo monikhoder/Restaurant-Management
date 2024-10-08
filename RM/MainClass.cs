@@ -13,7 +13,6 @@ namespace RM
         //get validation user
         public static bool Isvaliuser(string username, string password)
         {
-           // var db = new RMEntities();
             foreach (var item in db.users)
             {
                 if (item.username == username && item.upass == password)

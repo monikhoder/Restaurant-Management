@@ -203,6 +203,7 @@
             this.btnTable.Text = "Table";
             this.btnTable.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTable.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnTable.Click += new System.EventHandler(this.btnTable_Click);
             // 
             // btnProduct
             // 
@@ -331,10 +332,11 @@
             // 
             this.lblLoginName.AutoSize = true;
             this.lblLoginName.BackColor = System.Drawing.Color.Transparent;
-            this.lblLoginName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoginName.Location = new System.Drawing.Point(26, 31);
+            this.lblLoginName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoginName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblLoginName.Location = new System.Drawing.Point(26, 29);
             this.lblLoginName.Name = "lblLoginName";
-            this.lblLoginName.Size = new System.Drawing.Size(193, 28);
+            this.lblLoginName.Size = new System.Drawing.Size(254, 32);
             this.lblLoginName.TabIndex = 0;
             this.lblLoginName.Text = "label userlogin name";
             // 

@@ -24,7 +24,8 @@ namespace RM
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            lblLoginName.Text = MainClass.USER;
+            lblLoginName.Text = $"Wellcome : {MainClass.USER}";
+            AddControls(new HomeForm());
         }
         public void AddControls(Form form)
         {
@@ -47,7 +48,12 @@ namespace RM
 
         private void btnProduct_Click(object sender, EventArgs e)
         {
-            AddControls(new View.ProductViewForm());
+            //AddControls(new View.ProductViewForm());
+        }
+
+        private void btnTable_Click(object sender, EventArgs e)
+        {
+            AddControls(new View.TableViewForm());
         }
     }
 }

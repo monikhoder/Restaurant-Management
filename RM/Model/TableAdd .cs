@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace RM
 {
-    public partial class CategoryAdd : Form
+    public partial class TableAdd : Form
     {
-        public int CategoryId = 0;
-        public CategoryAdd()
+        public int TableId = 0;
+        public TableAdd()
         {
             InitializeComponent();
         }
@@ -28,25 +28,25 @@ namespace RM
         private void btnSave_Click(object sender, EventArgs e)
         {
             
-            if (txtName.Text != "" && CategoryId == 0 )
+            if (txtName.Text != "" && TableId == 0 )
             {
-                Category category = new Category();
-                category.CategoryName = txtName.Text;
-                category.Created = DateTime.Now;
-                category.Updated = DateTime.Now;
-                MainClass.db.Categories.Add(category);
+                Table t = new Table();
+                t.TableName = txtName.Text;
+                t.Created = DateTime.Now;
+                t.Updated = DateTime.Now;
+                MainClass.db.Tables.Add(t);
                 MainClass.db.SaveChanges();
-                CategoryId = 0;
+                TableId = 0;
                 this.Close();
-            }else if (CategoryId != 0)
+            }else if (TableId != 0)
             {
-                var category =  MainClass.db.Categories.FirstOrDefault(c => c.CategoryId == CategoryId);
+                var table =  MainClass.db.Tables.FirstOrDefault(t => t.TableId == TableId);
                 if(txtName.Text != "")
                 {
-                    category.CategoryName = txtName.Text;
-                    category.Updated = DateTime.Now;
+                    table.TableName = txtName.Text;
+                    table.Updated = DateTime.Now;
                     MainClass.db.SaveChanges();
-                    CategoryId = 0;
+                    TableId = 0;
                     this.Close();
 
                 }
@@ -56,11 +56,11 @@ namespace RM
             {
                 Guna2MessageDialog alert = new Guna2MessageDialog();
                 alert.Icon = MessageDialogIcon.Error;
+                alert.Text = "Please enter table name";
                 alert.Style = MessageDialogStyle.Light;
-                alert.Text = "Please enter Category name";
-                alert .Parent = this;
+                alert.Parent = this;
                 alert.Show();
-                //MessageBox.Show("Please enter category name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               
             }
         }
     }

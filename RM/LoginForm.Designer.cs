@@ -35,7 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.msgLogin = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.txbPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txbUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.loginPanel.SuspendLayout();
@@ -138,15 +137,6 @@
             this.lblPassword.Text = "Password";
             this.lblPassword.Click += new System.EventHandler(this.lblPassword_Click);
             // 
-            // msgLogin
-            // 
-            this.msgLogin.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
-            this.msgLogin.Caption = "RMS";
-            this.msgLogin.Icon = Guna.UI2.WinForms.MessageDialogIcon.Warning;
-            this.msgLogin.Parent = this;
-            this.msgLogin.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
-            this.msgLogin.Text = null;
-            // 
             // txbPassword
             // 
             this.txbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -225,7 +215,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txbPassword;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2MessageDialog msgLogin;
     }
 }
 
